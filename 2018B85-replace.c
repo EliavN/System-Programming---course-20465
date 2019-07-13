@@ -24,6 +24,6 @@ int main(void)
 	int a1 = 180;
 	int changed = replace(&a1, sizeof(int));
 	if(changed)
-		printf("a1 was changed\n");
+		printf("a1 was changed and the number after change is %d\n", a1);
 	return 0;
 }
