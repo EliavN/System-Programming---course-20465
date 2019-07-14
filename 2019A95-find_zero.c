@@ -50,6 +50,6 @@ int main()
 	int array[ARR_LEN] = {15,15,15,15,3,5,6,7,7,9,10,11,12,13,14,15,15,17,18,19,20,21,22,23,24,25,26,27,28,29};
 	int theCell = 0, numberOfZero = 0;
 	scanArray(array, &numberOfZero, &theCell);
-	printf("The number with maximum zero bits in the array is: %d\nIt founded in cell number: %d\nIt has %d bits off\n", array[theCell],theCell, numberOfZero);
+	printf("The number with maximum zero bits in the array is: %d\nIt found in cell number: %d\nIt has %d bits off\n", array[theCell],theCell, numberOfZero);
 	return 0;
 }
