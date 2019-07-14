@@ -23,13 +23,13 @@ int main(void)
 	if(result == NOT_FOUND)
 		printf("Cannot find the requested number in the given array\n");
 	else
-		printf("The number %d is founded in cell %d\n", intNum, result);
+		printf("The number %d found in cell %d\n", intNum, result);
 
 	result = search(doubleArray, &doubleNum, 9, sizeof(double));
 	if(result == NOT_FOUND)
 		printf("Cannot find the requested number in the given array\n");
 	else
-		printf("The number %f is founded in cell %d\n", doubleNum, result);
+		printf("The number %f found in cell %d\n", doubleNum, result);
 
 	return 0;
 }
