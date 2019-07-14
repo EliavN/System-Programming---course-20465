@@ -5,7 +5,7 @@ int HowManyThreeBits(void *arr, int arrLen ,int sizeOfType)
 {
 	int index=0 , memberCounter=0 , bitCounter=0, curBit = 0, curByte = 0;
 	const unsigned char *ptr = arr;
-	for(bitCounter = 0;index <arrLen; index++, bitCounter = 0){
+	for(;index <arrLen; index++, bitCounter = 0){
 		for(curByte = 0; curByte<sizeOfType; curByte++, ptr++){
 			for(curBit = 0; curBit < CHAR_BIT; curBit++){
 				if(*ptr & (1 << curBit))
