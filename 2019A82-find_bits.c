@@ -16,10 +16,7 @@ int find_bits(void *num1, void *num2, int sizeOfNum)
 				counter++;
 		}
 	totalBits=counterNum1>counterNum2 ? counterNum1 : counterNum2;
-	if(counter>=(totalBits/2.0))
-		return TRUE;
-	else
-		return FALSE;
+        rerurn counter >= (totalBits/2.0) ? TRUE : FALSE;
 }
 
 void print_numbers(int iparam, int *arr, int arrLen)
