@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #define NOT_FOUND -1
-
+/*The search function receive an array and a varible of any type you need, the function checks whether the number is in the array or not.*/
 int search(void *array, void *var, int arrLength, int typeSize ) 
 {
 	int index = 0;
