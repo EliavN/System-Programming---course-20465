@@ -12,12 +12,12 @@
 	}\
 }
 
-typedef enum {
+typedef enum{
     INT,
     FLOAT,
     DOUBLE,
-	LONG
-} TYPE;
+    LONG
+}TYPE;
 
 void positive_sum(TYPE type, void *arrSrc, void *arrDest, int arrLen)
 {
