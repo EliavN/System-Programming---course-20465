@@ -6,7 +6,7 @@
 	for(;i<arrLen;i++)\
 		arrDest[i]=arrSrc[i];\
 	for(i=1;i<arrLen;i++){\
-		arrDest[i]+=arrDest[i-i];\
+		arrDest[i]+=arrDest[i-1];\
 		if(arrDest[i]<0)\
 			arrDest[i]=0;\
 	}\
