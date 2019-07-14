@@ -23,12 +23,9 @@ int find_zero(void *param1, void *param2, void *result, int sizeOfParam)
 }
 
 /*for main use - section B*/
-int bytes_needed(unsigned long num) {
+int bytes_needed(unsigned long num){
 	int bits_needed = sizeof(num)*CHAR_BIT - __builtin_clzll(num);
-	if(bits_needed == 0)
-		return 1;
-	else
-		return (bits_needed + 7) / 8;
+	return (bits_needed == 0) ? 1 : (bits_needed + 7) / 8;
 }
 
 void scanArray(int *array, int *maxZero, int *cellNumber)
