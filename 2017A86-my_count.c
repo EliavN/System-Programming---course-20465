@@ -15,6 +15,6 @@ unsigned int my_count(void *arr, int arrLen, int sizeOfType)
 int main()
 {
 	int arr[3]={1,2,3};
-	printf("counter is: %d\n",my_count(arr,3,sizeof(int)));
+	printf("The total bits ON is: %d\n",my_count(arr,3,sizeof(int)));
 	return 0;
 }
